@@ -7,11 +7,13 @@ import com.badlogic.gdx.utils.ScreenUtils;
 
 /** {@link com.badlogic.gdx.ApplicationListener} implementation shared by all platforms. */
 public class Main extends ApplicationAdapter {
+    private Config config;
     private SpriteBatch batch;
     private Texture image;
 
     @Override
     public void create() {
+        config = new Config();
         batch = new SpriteBatch();
         image = new Texture("libgdx.png");
     }
